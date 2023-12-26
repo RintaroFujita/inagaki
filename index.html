@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>募集一覧</title>
+  <style>
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#search {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.募集 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.募集__item {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.募集__item h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.募集__item p {
+  margin-bottom: 5px;
+}
+
+li{
+	list-style: none;
+}
+
+  </style>
+</head>
+<body>
+  <h1>募集一覧</h1>
+  <form action="#">
+    <label for="search">検索:</label>
+    <input type="text" id="search" name="search">
+  </form>
+  <section class="募集">
+    <article class="募集__item">
+      <h2>11:30分発</h2>
+	<ul>
+		<li>割り勘</li>
+		<li>残り人数</li>
+		<li>時間になったら出発</li>
+	</ul>
+    </article>
+    <article class="募集__item">
+      <h2>11:35分発</h2>
+      <p>投稿者負担</p>
+      <p>残り人数 3人</p>
+      <p>揃うまで待ちます</p>
+    </article>
+  </section>
+</body>
+</html>
